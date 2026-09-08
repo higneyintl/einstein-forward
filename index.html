@@ -1,4 +1,43 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Forward test: the midpoint rule</title>
-<style>body{margin:0;background:#f2f5f7;color:#16212b;font:15px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif}.page{max-width:820px;margin:0 auto;padding:24px 14px}h1{font-size:24px}.meta{color:#7d8d99;font-size:12.5px}</style></head>
-<body><div class="page"><h1>Forward test: the midpoint rule</h1><div class="meta">EinsteinClone v1.1 on SimSim102 · long above / short below the prior session's midpoint at the first 09:30 brick · skip the third setup · 2 base + 1 runner</div>
-<p>The forward test starts on <b>2026-09-08</b>. The first close-out report lands here at about 17:30 ET that day, and every weekday after. Expectation from the backtest: +$1.61 a setup, SD $219, about 30 setups a session; stopping rule at two standard errors below expectation.</p></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forward test: the midpoint rule</title>
+<style>
+:root{--ink:#16212b;--ink2:#4f6070;--muted:#7d8d99;--rule:#d5dde3;--pos:#1f7a4d;--neg:#9a3b2e;--a:#0f7fa8;--bg:#f2f5f7;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--ink:#e7edf1;--ink2:#b4c0c9;--muted:#8d9ca7;--rule:#2e3b45;--pos:#5fb98a;--neg:#e08a7c;--a:#2e9fcb;--bg:#121920;--card:#1a232b}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+*{box-sizing:border-box;min-width:0} .meta,.status,.card,.tile{overflow-wrap:anywhere}
+.page{max-width:820px;margin:0 auto;padding:20px 14px 60px}
+h1{font-size:24px;margin:0 0 4px} h2{font-size:17px;margin:28px 0 8px;border-top:1px solid var(--rule);padding-top:12px}
+.meta{color:var(--muted);font-size:12.5px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}
+.tile{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:10px 12px}
+.tile b{display:block;font-size:22px;font-variant-numeric:tabular-nums} .tile span{color:var(--muted);font-size:12px}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.status{padding:12px 14px;border-radius:6px;border:1px solid var(--rule);background:var(--card);font-weight:600}
+.status.stop{border-color:var(--neg);color:var(--neg)}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums} th,td{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap} th:first-child,td:first-child{text-align:left}
+.wrap{overflow-x:auto;background:var(--card);border:1px solid var(--rule);border-radius:6px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:12px}
+</style></head><body><div class="page">
+<h1>Forward test: the midpoint rule</h1>
+<div class="meta">EinsteinClone v1.1 on SimSim102 · long above / short below the prior RTH midpoint at the first 09:30 brick · skip the third setup · arms 09:30–15:55 · 2 base + 1 runner · updated 2026-09-08 17:30 ET</div>
+<div class="tiles">
+<div class="tile"><b>1</b><span>sessions run</span></div>
+<div class="tile"><b>11</b><span>setups</span></div>
+<div class="tile"><b class="neg">−$459</b><span>cumulative P&amp;L</span></div>
+<div class="tile"><b>$18</b><span>expected · ± $1,451 (2 se)</span></div>
+<div class="tile"><b>1</b><span>watchdog trips</span></div>
+</div>
+<div class="status ">In band: cumulative P&amp;L is within two standard errors of the backtest expectation.</div>
+<h2>Cumulative P&amp;L against expectation</h2>
+<div class="card"><svg viewBox="0 0 720 300" style="width:100%;height:auto" role="img" aria-label="Cumulative P&L against the backtest expectation with a two standard error band"><line x1="64" x2="704" y1="257.7" y2="257.7" stroke="#d5dde3"/><text x="58" y="261.7" text-anchor="end" font-size="11" fill="#7d8d99">−$1,500</text><line x1="64" x2="704" y1="219.3" y2="219.3" stroke="#d5dde3"/><text x="58" y="223.3" text-anchor="end" font-size="11" fill="#7d8d99">−$1,000</text><line x1="64" x2="704" y1="180.8" y2="180.8" stroke="#d5dde3"/><text x="58" y="184.8" text-anchor="end" font-size="11" fill="#7d8d99">−$500</text><line x1="64" x2="704" y1="142.4" y2="142.4" stroke="#d5dde3"/><text x="58" y="146.4" text-anchor="end" font-size="11" fill="#7d8d99">$0</text><line x1="64" x2="704" y1="103.9" y2="103.9" stroke="#d5dde3"/><text x="58" y="107.9" text-anchor="end" font-size="11" fill="#7d8d99">$500</text><line x1="64" x2="704" y1="65.5" y2="65.5" stroke="#d5dde3"/><text x="58" y="69.5" text-anchor="end" font-size="11" fill="#7d8d99">$1,000</text><line x1="64" x2="704" y1="27.0" y2="27.0" stroke="#d5dde3"/><text x="58" y="31.0" text-anchor="end" font-size="11" fill="#7d8d99">$1,500</text><polygon points="64.0,29.4 64.0,252.6" fill="#0f7fa8" fill-opacity=".12"/><polyline points="64.0,141.0" fill="none" stroke="#0f7fa8" stroke-width="1.5" stroke-dasharray="4 3"/><line x1="64" x2="704" y1="142.4" y2="142.4" stroke="#9aa"/><polyline points="64.0,177.7" fill="none" stroke="#16212b" stroke-width="2.2"/><circle cx="64.0" cy="177.7" r="4" fill="#16212b"/><text x="64.0" y="288" font-size="10" text-anchor="middle" fill="#7d8d99">09-08</text></svg><div class="meta">Black: cumulative P&amp;L. Dashed: expectation at +1.61 a setup. Band: ± 2 × $219 × √N. Stopping rule: stop if the black line leaves the band downward.</div></div>
+<h2>Last ten sessions</h2>
+<div class="wrap"><table><thead><tr><th>Date</th><th>Bias</th><th>Setups</th><th>Arms</th><th>Blocked bias/third/early/late</th><th>Day</th><th>Cumulative</th><th>Status</th></tr></thead><tbody><tr><td>2026-09-08 Tue</td><td>Long</td><td>11</td><td>53</td><td>10/1/0/0</td><td class="neg">−$459</td><td class="neg">−$459</td><td>in band · WATCHDOG</td></tr></tbody></table></div>
+<h2>Weekly roll-up</h2>
+<div class="wrap"><table><thead><tr><th>Week of</th><th>Sessions</th><th>Setups</th><th>P&amp;L</th><th>Expected ± se</th><th>Watchdog</th></tr></thead><tbody><tr><td>2026-09-07</td><td>1</td><td>11</td><td class="neg">−$459</td><td>$18 ± $726</td><td>1</td></tr></tbody></table></div>
+<h2>Today: 2026-09-08 Tuesday</h2>
+<div class="card"><div>Bias: <b>Long</b> · arms 53 · taken 10 · blocked bias 10, third 1, early 0, late 0 · superseded 13 · day P&amp;L <b class="neg">−$459</b></div>
+<div class="neg">WATCHDOG: 2026-09-08 12:32:25 TRIPPED quote-age=62s position-was=Long flattened disarmed-for-day</div>
+<div class=neg>Position open at close: 2026-09-08 09:45:20, 2026-09-08 09:54:30</div>
+<details style="margin-top:8px"><summary class="meta" style="cursor:pointer">Fills: 38</summary><div class="meta">09:30:05 ENTRY Long 29660.25 x1 BaseLong<br>09:30:05 ENTRY Long 29656.00 x1 RunnerLong<br>09:32:19 EXIT Short 29625.00 x1 Stop loss<br>09:32:19 EXIT Short 29624.25 x1 Stop loss<br>09:34:49 ENTRY Long 29603.00 x2 BaseLong<br>09:34:49 ENTRY Long 29603.00 x1 RunnerLong<br>09:35:51 EXIT Short 29567.25 x2 Stop loss<br>09:35:51 EXIT Short 29567.25 x1 Stop loss<br>09:45:20 ENTRY Long 29497.25 x2 BaseLong<br>09:45:20 ENTRY Long 29496.50 x1 RunnerLong<br>09:53:03 EXIT Short 29461.25 x1 Stop loss<br>09:53:03 EXIT Short 29460.75 x1 Stop loss<br>09:54:30 ENTRY Long 29487.75 x2 BaseLong<br>09:54:31 ENTRY Long 29488.00 x1 RunnerLong<br>09:55:52 EXIT Short 29523.50 x2 Profit target<br>10:03:08 ENTRY Long 29468.00 x2 BaseLong<br>10:03:08 ENTRY Long 29468.00 x1 RunnerLong<br>10:10:25 EXIT Short 29432.25 x2 Stop loss<br>10:10:25 EXIT Short 29432.25 x1 Stop loss<br>10:12:45 ENTRY Long 29457.00 x2 BaseLong<br>10:12:45 ENTRY Long 29457.00 x1 RunnerLong<br>10:16:43 EXIT Short 29492.75 x2 Profit target<br>10:17:15 EXIT Short 29475.25 x1 Stop loss<br>10:20:45 ENTRY Long 29491.00 x2 BaseLong<br>10:20:45 ENTRY Long 29491.00 x1 RunnerLong<br>10:41:33 EXIT Short 29526.75 x2 Profit target<br>10:45:13 EXIT Short 29520.25 x1 Stop loss<br>10:50:58 ENTRY Long 29543.00 x1 BaseLong<br>10:50:58 ENTRY Long 29542.75 x1 RunnerLong<br>11:11:06 EXIT Short 29578.50 x1 Profit target<br>11:11:06 EXIT Short 29578.75 x1 Profit target<br>11:24:44 ENTRY Long 29615.25 x2 BaseLong<br>11:24:44 ENTRY Long 29615.25 x1 RunnerLong<br>12:11:05 EXIT Short 29579.50 x2 Stop loss<br>12:11:05 EXIT Short 29579.50 x1 Stop loss<br>12:25:19 ENTRY Long 29595.50 x2 BaseLong<br>12:25:19 ENTRY Long 29595.50 x1 RunnerLong<br>12:43:39 EXIT Short 29569.25 x3 Sell</div></details></div>
+<div class="meta" style="margin-top:30px">Data: results.csv and ledger.csv beside this page. Expectation from V1: ETH-session midpoint from bricks, arms any time; 134 sessions 2026-03-02 to 2026-09-04: +1.61 a setup, SD $219, 3963 backtest setups, 30 a session.</div>
+</div></body></html>

@@ -1,1 +1,2 @@
 date,weekday,data,bias,arms,setups,fills,taken,blocked_bias,blocked_third,blocked_early,blocked_late,superseded,disarmed,other,day_pnl,cum_setups,cum_pnl,exp_cum,se_cum,status,watchdog,roll,open_at_close,nt8_running_at_close,nt8_log_today,log_file
+2026-09-08,Tue,yes,Long,53,11,38,10,10,1,0,0,13,0,19,-459.4,11,-459.4,17.71,725.64,in band,1,0,2,yes,yes,EinsteinClone-20260908T130437Z-cd0efd.csv
