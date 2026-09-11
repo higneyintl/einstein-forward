@@ -1,4 +1,5 @@
 date,weekday,data,bias,arms,setups,fills,taken,blocked_bias,blocked_third,blocked_early,blocked_late,superseded,disarmed,other,day_pnl,cum_setups,cum_pnl,exp_cum,se_cum,status,watchdog,roll,open_at_close,nt8_running_at_close,nt8_log_today,log_file,notes
-2026-09-08,Tue,yes,Long,53,11,38,10,10,1,0,0,13,0,19,-459.4,11,-459.4,17.71,725.64,in band,1,0,2,yes,yes,EinsteinClone-20260908T130437Z-cd0efd.csv,
-2026-09-09,Wed,yes,Short,64,14,54,14,15,1,0,0,20,0,14,-1289.4,25,-1748.8,40.25,1093.95,in band,1,0,4,yes,yes,EinsteinClone-20260908T130437Z-cd0efd.csv,
-2026-09-10,Thu,yes,Short,4,2,8,2,1,0,0,0,0,0,1,-656.9,27,-2405.7,43.47,1136.87,BELOW RAIL,1,0,0,no,yes,EinsteinClone-20260910T131701Z-e27296.csv,1
+2026-09-08,Tue,yes,Long,53,10,44,10,10,1,0,0,13,0,19,-441.0,10,-441.0,16.1,691.87,in band,1,0,0,yes,yes,EinsteinClone-20260908T130437Z-cd0efd.csv,0
+2026-09-09,Wed,yes,Short,64,14,59,14,15,1,0,0,20,0,14,1210.2,24,769.2,38.64,1071.85,in band,1,0,0,yes,yes,EinsteinClone-20260908T130437Z-cd0efd.csv,1
+2026-09-10,Thu,yes,Short,4,2,8,2,1,0,0,0,0,0,1,-656.9,26,112.3,41.86,1115.61,in band,1,0,0,yes,yes,EinsteinClone-20260910T131701Z-e27296.csv,1
+2026-09-11,Fri,yes,Long,50,5,25,5,7,1,0,0,7,0,30,193.5,31,305.8,49.91,1218.17,in band,0,0,0,yes,yes,EinsteinClone-20260911T122757Z-714b5d.csv,1
