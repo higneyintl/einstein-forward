@@ -6,3 +6,4 @@ date,weekday,data,bias,arms,setups,fills,taken,blocked_bias,blocked_third,blocke
 2026-09-14,Mon,no,,0,0,0,0,0,0,0,0,0,0,0,0,31,305.8,49.91,1218.17,NO DATA,0,0,0,no,no,,1
 2026-09-15,Tue,no,,0,0,0,0,0,0,0,0,0,0,0,0,31,305.8,49.91,1218.17,NO DATA,0,0,0,yes,yes,,0
 2026-09-16,Wed,yes,Long,107,28,110,28,34,1,0,0,38,0,6,-1799.6,59,-1493.8,94.99,1680.56,in band,0,0,11,yes,yes,EinsteinClone-20260916T123254Z-de1366.csv,0
+2026-09-17,Thu,yes,Long,73,6,24,6,10,1,0,0,15,0,41,107.4,65,-1386.4,104.65,1763.94,in band,0,0,4,yes,yes,EinsteinClone-20260916T123254Z-de1366.csv,0
