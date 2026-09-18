@@ -350,3 +350,6 @@ day,time,side,level,disposition,fill,pnl
 2026-09-17,14:35:26,Short,29716.50,superseded,,
 2026-09-17,15:04:41,Long,29739.00,superseded,,
 2026-09-17,15:55:00,Short,29761.50,blocked-bias,,
+2026-09-18,19:05:13,Long,29704.75,blocked-nobias,,
+2026-09-18,19:16:34,Short,29682.25,blocked-nobias,,
+2026-09-18,21:42:06,Long,29678.50,blocked-nobias,,
